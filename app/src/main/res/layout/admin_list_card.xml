@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    app:cardBackgroundColor="#FFFFFF"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp"
+    app:strokeWidth="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/admin_profileImg"
+            android:layout_width="164dp"
+            android:layout_height="164dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintEnd_toStartOf="@+id/linearLayout3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize15Percent"
+            tools:ignore="ImageContrastCheck"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="4dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/admin_profileImg"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/admin_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                tools:text="Angela Venable" />
+
+            <TextView
+                android:id="@+id/admin_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textSize="16sp"
+                tools:text="avenable@ivytech.edu" />
+
+            <TextView
+                android:id="@+id/admin_courseList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textSize="16sp"
+                tools:text="CSCI101, DATA201 , ..." />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

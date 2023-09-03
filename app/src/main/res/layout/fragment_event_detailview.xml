@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:foregroundTint="@color/lightGreen1"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/detailview_event_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#8BC34A"
+                    android:fontFamily="sans-serif-thin"
+                    android:padding="8dp"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:text="PROGRAMMING LAB AT     WHEREVER" />
+
+                <TextView
+                    android:id="@+id/detailview_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="4dp"
+                    android:focusable="true"
+                    android:longClickable="true"
+                    android:textIsSelectable="true"
+                    android:textSize="20sp"
+                    tools:text="Tuesday, April 19 2022" />
+
+                <TextView
+                    android:id="@+id/detailview_timeframe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:focusable="true"
+                    android:longClickable="true"
+                    android:textIsSelectable="true"
+                    android:textSize="20sp"
+                    tools:text="12:00 PM - 2 : 00 PM" />
+
+                <View
+                    android:id="@+id/detail_description_div"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="?android:attr/listDivider" />
+
+                <TextView
+                    android:id="@+id/detailview_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:autoLink="all"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:linksClickable="true"
+                    android:longClickable="true"
+                    android:text="TextView"
+                    android:textIsSelectable="true"
+                    android:textSize="20sp"
+                    tools:text="desciption of event if it exists " />
+
+                <View
+                    android:id="@+id/description_creator_div"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="?android:attr/listDivider" />
+
+                <TextView
+                    android:id="@+id/detailview_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:autoLink="all"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:linksClickable="true"
+                    android:longClickable="true"
+                    android:textIsSelectable="true"
+                    android:textSize="20sp"
+                    tools:text="www.zoomlinket.com" />
+
+                <View
+                    android:id="@+id/description_location_div"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="?android:attr/listDivider" />
+
+                <TextView
+                    android:id="@+id/detailview_professor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="TextView"
+                    android:textSize="20sp"
+                    tools:text="ANGELA VENABLE" />
+
+                <TextView
+                    android:id="@+id/detailview_bio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:text="TextView"
+                    android:textSize="16sp"
+                    tools:text="Professor bio if it exists " />
+
+                <Button
+                    android:id="@+id/button_savetocalendar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginRight="48dp"
+                    android:layout_marginBottom="24dp"
+                    android:backgroundTint="@color/ivyTechGray"
+                    android:text="@string/detailview_saveto_calenddar" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

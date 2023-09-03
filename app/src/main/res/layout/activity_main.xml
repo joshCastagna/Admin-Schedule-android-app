@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/MainActivity_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.63"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:fontFamily="sans-serif-light"
+            android:textSize="34sp"
+            app:flow_wrapMode="none"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/profileImage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_wrapBehaviorInParent="horizontal_only"
+            tools:text="Welcome, Josh" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/profileImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="24dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+            app:strokeColor="@color/primaryColor"
+            app:strokeWidth="2sp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <TextView
+            android:id="@+id/weeklySchedule_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/ivyTechGray"
+            android:padding="8dp"
+            android:text="This Week"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentContainerView"
+            android:name="edu.ivytech.noactivitystarter.WeekEventFragment"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="4dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_horizontal"
+            android:layout_marginTop="19dp"
+            android:baselineAligned="false"
+            android:gravity="center|center_horizontal"
+            android:orientation="horizontal"
+            android:showDividers="beginning"
+            android:textAlignment="center">
+
+            <ImageButton
+                android:id="@+id/calendarButton"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/calendarButtonDescription"
+                android:padding="16dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/ic_action_calendar_week" />
+
+            <ImageButton
+                android:id="@+id/announcementButton"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="16dp"
+                android:contentDescription="@string/makeAnnouncementBttnDescription"
+                android:padding="16dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/ic_action_megaphone_fill" />
+
+            <ImageButton
+                android:id="@+id/adminListbutton"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="16dp"
+                android:contentDescription="@string/adminListBttnDescription"
+                android:padding="16dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/fui_ic_anonymous_white_24dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/infobutton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:backgroundTint="#00000000"
+        android:contentDescription="@string/info_description"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_action_info"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

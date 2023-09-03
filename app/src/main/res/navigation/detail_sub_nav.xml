@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/detail_sub_nav"
+    app:startDestination="@id/detailFragment_fromMain">
+
+    <fragment
+        android:id="@+id/detailFragment_fromMain"
+        android:name="edu.ivytech.noactivitystarter.fragments.DetailFragment"
+        android:label="DetailFragment" >
+        <argument
+            android:name="item_id"
+            app:argType="java.util.UUID" />
+    </fragment>
+</navigation>

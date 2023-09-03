@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "470364441130",
+    "project_id": "finalprojectfirebase-74af4",
+    "storage_bucket": "finalprojectfirebase-74af4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:470364441130:android:c6b47ef70129e8288f1153",
+        "android_client_info": {
+          "package_name": "edu.ivytech.noactivitystarter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "470364441130-b4ba4lqhmnoi89qc58b0u8a8itoms0nv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "edu.ivytech.noactivitystarter",
+            "certificate_hash": "f3158e97a5639229599de9fb828365316461bf0d"
+          }
+        },
+        {
+          "client_id": "470364441130-aqpo58ncnb1hqs0it1eovuggs5kc6lff.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEs9rEOEc_gRdGUli9AhEPjkJAywa3nx0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "470364441130-aqpo58ncnb1hqs0it1eovuggs5kc6lff.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

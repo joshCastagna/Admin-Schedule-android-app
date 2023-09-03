@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/admin_list_to_detail"
+    app:startDestination="@id/adminListFragment">
+    <fragment
+        android:id="@+id/adminListFragment"
+        android:name="edu.ivytech.noactivitystarter.fragments.AdminListFragment"
+        android:label="AdminListFragment"
+        tools:layout="@layout/fragment_admin_list">
+        <action
+            android:id="@+id/action_adminListFragment_to_adminDetailFragment"
+            app:destination="@id/adminDetailFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminDetailFragment"
+        android:name="edu.ivytech.noactivitystarter.fragments.AdminDetailFragment"
+        android:label="AdminDetailFragment"
+        tools:layout="@layout/fragment_admin_detail">
+        <argument
+            android:name="AdminID"
+            app:argType="string" />
+    </fragment>
+</navigation>

@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Administration Scheduler</string>
+    <string name="title_activity_preferences">Preferences</string>
+
+    <!-- MAIN ACTIVITY STRINGS -->
+    <string name="welcome_string_nullName">Welcome!</string>
+    <string name="welcome_string_name">Welcome, %s</string>
+    <string name="schedule">Schedule</string>
+
+    <!-- MENU STRINGS -->
+    <string name="preferences_title">Preferences</string>
+    <string name="open_preferences"></string>
+    <string name="log_out_title">Log Out</string>
+
+    <!-- INFO ACTIVITY STRINGS-->
+    <string name="info_title">ABOUT</string>
+    <string name="info_desc">This application allows you, an Ivy Tech Administrator, to view the open lab schedule of you and your fellow instructors. You may send notifications out to students and view fellow administrators profile pages.</string>
+    <string name="custom_title">CUSTOMIZATION</string>
+    <string name="custom_desc">Parts of this application can be customized inside the Preferences menu. You can change how events will be added to your personal calendar and you can also change how events are displayed within this application.</string>
+
+    <!-- PREFERENCES SETTINGS, TO BE CHANGED -->
+    <!-- Preference Titles -->
+    <string name="events_header">EVENTS</string>
+    <string name="reminders_header">REMINDERS</string>
+
+    <!-- EVENT Preferences -->
+    <string name="detailed_calendarAdd">Allow Detailed Calendar Events</string>
+    <string name="detailed_calendarAdd_on">When adding an event to your personal calendar, detailed description and location are provided</string>
+    <string name="detailed_calendarAdd_off">When adding an event to your personal calendar, only the title and time are added</string>
+    <string name="disable_past_events_title">Disable Past Events</string>
+    <string name="disable_past_events_desc">Disable events that have passed</string>
+
+
+
+    <!-- REMINDER Preferences -->
+    <string name="reminder_title">Time Before Reminder</string>
+    <string name="allow_reminders">Allow Reminder Notifications</string>
+    <string name="attachment_title">Allow Detailed Reminders</string>
+    <string name="attachment_summary_on">Reminder will show details about event such as location, duration, and description.
+    </string>
+    <string name="attachment_summary_off">Reminder will show only the name of the event.</string>
+
+
+    <!-- USER PROFILE STRINGS -->
+    <string name="bio_name">Name</string>
+    <string name="bio_save">SAVE PROFILE</string>
+    <string name="bio_fName">First Name</string>
+    <string name="bio_lName">Last Name</string>
+    <string name="profile_title">User Profile</string>
+    <string name="profile_bio_hint">Biography</string>
+    <string name="detailview_saveto_calenddar">Save to calendar</string>
+    <string name="info_description">Application Information</string>
+    <string name="calendarButtonDescription">View All Events</string>
+    <string name="makeAnnouncementBttnDescription">Make An Announcement</string>
+    <string name="adminListBttnDescription">Administration List</string>
+    <string name="editbutton_text">Edit Profile</string>
+    <string name="admindetail_courses">COURSES</string>
+    <string name="add_message">New Announcement</string>
+    <string name="subject_hint">Subject</string>
+    <string name="body_hint">Body</string>
+    <string name="cancel_bttn">Cancel</string>
+    <string name="send_bttn">Send</string>
+    <string name="reminder_time_title">Time before reminders</string>
+
+
+</resources>

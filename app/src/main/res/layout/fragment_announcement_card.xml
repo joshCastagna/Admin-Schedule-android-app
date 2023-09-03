@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp"
+    app:strokeColor="@color/lightGreen1"
+    app:strokeWidth="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="84dp"
+            android:background="@color/lightGreen1">
+
+            <TextView
+                android:id="@+id/date_posted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textAllCaps="true"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/announcement_card_title"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:text="WED, MAY 3, 2022" />
+
+            <TextView
+                android:id="@+id/announcement_card_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:padding="4dp"
+                android:paddingStart="8dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/annnouncement_card_name"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="New Lab On Friday" />
+
+            <TextView
+                android:id="@+id/annnouncement_card_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="8dp"
+                android:paddingStart="16dp"
+                android:paddingBottom="4dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/announcement_card_title"
+                tools:text="Angela Venable" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/announcement_card_bodyprev"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="4dp"
+            android:ellipsize="none"
+            android:fadeScrollbars="false"
+            android:fadingEdgeLength="45dp"
+
+            android:isScrollContainer="false"
+            android:paddingBottom="8dp"
+            android:requiresFadingEdge="vertical"
+            android:singleLine="false"
+            tools:text="Hello Everyone! I would like to announce that there will be an additional lab every Wednesday night starting the 18th. I also wanted to let you all know that I am blah blab bnf g hgfhjgdf " />
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
